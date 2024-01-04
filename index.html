@@ -1,0 +1,31 @@
+<!doctype HTML>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div>
+<h2>Converta seus valores</h2>
+<p>Digite o valor</p>
+<label>R$</label><input type="text" id="rea" class="rea"><br>
+
+<button onclick="dolar()"> Dolar </button>
+<button onclick="euro()">Euro</button>
+<div id="reti">
+<p id="tela"></p>
+</div>
+<script>
+function dolar(){
+var rel = parseFloat(document.getElementById('rea').value);
+let dol = rel*5;
+document.getElementById('tela').innerHTML = "$"+dol;
+}
+function euro(){
+var rel = parseFloat(document.getElementById('rea').value);
+let eu = rel*5.29;
+document.getElementById('tela').innerHTML = "€"+eu;
+}
+</script>
+</div>
+</body>
+</html>
